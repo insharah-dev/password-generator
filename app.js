@@ -3,7 +3,6 @@ const lowercase = "abcdefghijklmnopqrstuvwxyz"
 const number = "1234567890"
 const special = "~!@#$%^&*()-+"
 
-
 const uppercaseChecked = document.getElementById('uppercaseChecked')
 const LowercaseChecked = document.getElementById('LowercaseChecked')
 const numberChecked = document.getElementById('numberChecked')
@@ -40,14 +39,12 @@ if(characters.length ===0){
     return;
 }
 
-
 for(let i = 0; i<passLength; i++){
    
     pass+=characters[Math.floor(Math.random()*characters.length)]
     console.log(pass);
     outputbtn.value = pass
 }
-
 })
 
 
